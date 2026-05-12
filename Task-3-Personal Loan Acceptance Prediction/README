@@ -1,1 +1,131 @@
+Task 5: Personal Loan Acceptance Prediction
+Predicting Customer Response to Bank Marketing Campaigns
+Project Overview
+This project focuses on predicting which customers are likely to accept a personal loan offer (term deposit) based on their demographic and financial profiles. By analyzing factors such as age, job, and marital status, we help the bank identify high-potential leads for their marketing campaigns.
 
+The project was developed using Python in Google Colab and implements a classification model to distinguish between customers who accept or decline the offer.
+
+Objective
+The main objective of this project is to:
+
+Perform basic data exploration on key customer features
+
+Understand the impact of age, job, and marital status on loan acceptance
+
+Train a machine learning classifier (Logistic Regression/Decision Tree)
+
+Identify specific customer groups with the highest likelihood of acceptance
+
+Evaluate the model using classification metrics
+
+Dataset
+Dataset used: Bank Marketing Dataset (UCI Machine Learning Repository)
+
+Dataset Link: https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset
+
+File used: * bank.csv (or bank-full.csv)
+
+Technologies Used
+Python
+
+Google Colab
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+Seaborn
+
+Scikit-learn
+
+Machine Learning Model
+The following classification model was used:
+
+Logistic Regression (or Decision Tree Classifier)
+
+Project Workflow
+Data Collection
+
+Data Inspection & Summary
+
+Exploratory Data Analysis (EDA)
+
+Categorical Data Encoding (Label Encoding)
+
+Feature & Target Selection
+
+Train-Test Split
+
+Model Training
+
+Model Prediction
+
+Model Evaluation
+
+Business Insight Extraction
+
+Data Preprocessing
+Missing Values: The dataset was checked for null entries (usually clean in UCI versions).
+
+Encoding: Categorical variables like 'job', 'marital', and 'education' were converted into numerical format using Label Encoding to make them compatible with the machine learning model.
+
+Exploratory Data Analysis
+Visualizations were created to satisfy the task requirements:
+
+Age Distribution: Identifying the primary age groups of bank customers.
+
+Job Distribution: A count plot showing the variety of professions represented.
+
+Marital Status: Analyzing the marital background of the customer base.
+
+Success by Category: Bar charts showing acceptance rates across different demographics.
+
+Model Evaluation
+The model performance was evaluated using:
+
+Accuracy Score
+
+Confusion Matrix
+
+Classification Report (Precision, Recall, F1-Score)
+
+Model Accuracy
+Accuracy Achieved: [INSERT YOUR ACCURACY HERE, e.g., 89.2%]
+
+Results & Insights
+Target Demographics: Middle-aged customers and specific job categories (like 'technician' or 'management') showed higher interest in loan offers.
+
+Behavioral Patterns: Customers with longer contact durations during the campaign were significantly more likely to accept.
+
+Marital Influence: Married individuals formed the largest group of respondents.
+
+How to Run the Project
+Open the notebook in Google Colab.
+
+Upload the bank.csv dataset file.
+
+Run all cells sequentially.
+
+Review the visualizations and the final classification report.
+
+Project Structure
+Personal-Loan-Prediction/
+│
+├── Personal_Loan_Prediction.ipynb
+├── README.md
+└── bank.csv
+
+Future Improvements
+Implement Feature Scaling to improve Logistic Regression performance.
+
+Compare results with a Random Forest Classifier.
+
+Perform Hyperparameter tuning to reduce False Negatives.
+
+Author
+Ayesha
+
+License
+This project is developed for educational purposes as part of a Data Science Internship
