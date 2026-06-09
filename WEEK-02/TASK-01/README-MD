@@ -1,1 +1,57 @@
 
+Task 1 — Term Deposit Subscription Prediction (Bank Marketing)
+🎯 Objective
+Predict whether a bank customer will subscribe to a term deposit based on demographic info, contact history, and economic indicators using binary classification models.
+
+⬇️ Dataset
+Bank Marketing Dataset — UCI Machine Learning Repository
+
+✅ No manual download needed!
+The notebook automatically downloads the dataset from UCI in the first cell.
+Just run the cells in order.
+
+Direct link (for reference): https://archive.ics.uci.edu/dataset/222/bank+marketing
+
+🚀 How to Run on Google Colab
+Go to colab.research.google.com
+Click File → Upload Notebook and upload Task1_Bank_Marketing.ipynb
+Run all cells in order (Runtime → Run All)
+The first cell downloads the dataset automatically
+📋 My Approach
+1. Data Loading & Exploration
+Downloaded Bank Marketing dataset (41,188 rows, 20 features) from UCI
+Explored class distribution — found severe imbalance (~88% No, ~12% Yes)
+Analyzed subscription rates by job type, education, and marital status
+2. Data Preprocessing
+Replaced unknown values with mode imputation
+Label-encoded all categorical features (job, marital, education, etc.)
+Applied StandardScaler for Logistic Regression
+Used class_weight='balanced' to handle class imbalance
+3. Models Trained
+Model	Strategy
+Logistic Regression	Baseline linear model, scaled features
+Random Forest	Ensemble tree model, handles non-linearity
+4. Evaluation Metrics
+Confusion Matrix (True Positive, False Positive, etc.)
+F1-Score (best for imbalanced datasets)
+ROC-AUC Curve (overall discriminative ability)
+5. Explainable AI (SHAP)
+Used TreeExplainer on Random Forest
+Generated global feature importance (bar + beeswarm plots)
+Explained 5 individual predictions using waterfall plots
+📊 Results & Findings
+Model	F1-Score	ROC-AUC
+Logistic Regression	~0.47	~0.79
+Random Forest	~0.52	~0.80
+Key Insights:
+
+duration (call duration) is the strongest predictor — longer calls mean higher subscription probability
+Economic indicators (euribor3m, emp.var.rate) heavily influence customer decisions
+Random Forest outperforms Logistic Regression due to non-linear feature interactions
+SHAP waterfall plots clearly show why each prediction was made (XAI transparency)
+🛠 Skills Demonstrated
+Binary classification modeling
+Handling class imbalance
+Feature encoding (Label Encoding)
+Model evaluation (Confusion Matrix, F1, ROC-AUC)
+Explainable AI with SHAP
