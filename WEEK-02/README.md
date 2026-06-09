@@ -4,47 +4,86 @@ AYESHA ALI
 
 📁 Repository Structure
 📦 ml-assignment/
+
 ├── task1/
+
 │   ├── Task1_Bank_Marketing.ipynb       ← Colab Notebook
+
 │   └── README.md
+
 ├── task2/
+
 │   ├── Task2_Customer_Segmentation.ipynb ← Colab Notebook
+
 │   └── README.md
+
 ├── task3/
+
 │   ├── Task3_Energy_Forecasting.ipynb   ← Colab Notebook
+
 │   └── README.md
+
 └── README.md                            ← This file (combined)
+
 📋 Task Overview
+
 Task	Topic	Dataset	Dataset Source
+
 Task 1	Term Deposit Prediction (Classification)	Bank Marketing	Auto-downloaded from UCI
+
 Task 2	Customer Segmentation (Clustering)	Mall Customers	Manual download from Kaggle
+
 Task 3	Energy Forecasting (Time Series)	Household Power	Auto-downloaded from UCI
+
 ⬇️ Dataset Download Instructions
+
 Task 1 — Bank Marketing Dataset
+
 ✅ Automatic — The notebook downloads it from UCI in the first cell. No action needed.
 
+
+
 Task 2 — Mall Customers Dataset
+
 ⚠️ Manual download required:
 
+
+
 Go to https://www.kaggle.com/datasets/vjchoudhary7/customer-segmentation-tutorial-in-python
+
 Login to Kaggle (free account) and click Download
+
 Upload Mall_Customers.csv to Colab when the notebook asks
+
 Task 3 — Household Power Consumption Dataset
+
 ✅ Automatic — The notebook downloads it from UCI in the first cell. (~130 MB, takes 1–2 min)
 
+
+
 🚀 How to Run All Notebooks on Google Colab
+
 Open colab.research.google.com
+
 Go to File → Upload Notebook
+
 Upload the .ipynb file for the task
+
 Click Runtime → Run All
+
 For Task 2 only: upload Mall_Customers.csv when prompted
+
 📊 Task Summaries
+
 Task 1: Term Deposit Subscription Prediction
+
 Objective: Predict if a bank customer will subscribe to a term deposit.
+
 
 Approach:
 
 Loaded Bank Marketing dataset (41,188 rows, 20 features)
+
 Handled class imbalance (~88% No, ~12% Yes) using class_weight='balanced'
 Encoded categorical variables with Label Encoding
 Trained Logistic Regression and Random Forest classifiers
